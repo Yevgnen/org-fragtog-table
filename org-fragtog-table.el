@@ -101,7 +101,7 @@
     ;; point when point is on whitespace before the fragment.
     ;; So, advance to the nearest non-whitespace character before enabling.
     (re-search-forward "[^ \t]")
-    (or (my-render-org-table-preview-at-point)
+    (or (org-fragtog-table-preview-at-point)
         (ignore-errors (org-latex-preview)))))
 
 ;;;###autoload
