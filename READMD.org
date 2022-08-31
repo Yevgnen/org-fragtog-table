@@ -11,3 +11,7 @@ Add Org table preview support for [[https://github.com/io12/org-fragtog][org-fra
   :straight (:host github :repo "Yevgnen/org-fragtog-table")
   :hook (org-fragtog-mode . org-fragtog-table-mode))
 #+end_src
+
+* References
+
+- [[https://www.reddit.com/r/emacs/comments/d3a8or/pretty_org_tables_in_the_buffer_chapter_2_it/][Pretty org tables in the buffer - chapter 2 (it works properly) : emacs]]
