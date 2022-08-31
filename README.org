@@ -4,6 +4,10 @@
 
 Add Org table preview support for [[https://github.com/io12/org-fragtog][org-fragtog]].
 
+** Screenshot
+
+[[file:images/screenshot.png]]
+
 * Usage
 
 #+begin_src elisp
