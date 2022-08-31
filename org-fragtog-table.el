@@ -44,12 +44,11 @@
   (let* ((begin (org-element-property :begin table))
          (end (let ((pos (org-element-property :end table)))
                 (goto-char pos)
-                (beginning-of-line)
-                ;; Skip possible space after table
-                (while (not (looking-at " *[|#]"))
-                  (setq pos (point))
-                  (forward-line -1))
-                pos))
+                (while (looking-back "^[ \t\n]*" (line-beginning-position))
+                  (forward-line -1)
+                  (end-of-line))
+                (end-of-line)
+                (point)))
          (tabletxt (buffer-substring-no-properties begin end))
          (img (with-temp-buffer
                 (insert tabletxt)
