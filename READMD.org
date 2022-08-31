@@ -1,0 +1,13 @@
+#+title: README
+
+* Introduction
+
+Add Org table preview support for [[https://github.com/io12/org-fragtog][org-fragtog]].
+
+* Usage
+
+#+begin_src elisp
+(use-package org-fragtog-table
+  :straight (:host github :repo "Yevgnen/org-fragtog-table")
+  :hook (org-fragtog-mode . org-fragtog-table-mode))
+#+end_src
