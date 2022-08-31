@@ -23,9 +23,9 @@
 ;;
 ;;; Commentary:
 ;;
+;; Add Org table preview support for `org-fragtog'.
 ;;
-;;
-;; See documentation on https://github.com/Yevgnen/org-fragtog-table.el.
+;; See documentation on https://github.com/Yevgnen/org-fragtog-table.
 
 ;;; Code:
 
