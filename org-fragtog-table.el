@@ -56,7 +56,7 @@
                 (org-latex-convert-region-to-latex)
                 (org-preview-latex-fragment)
                 (goto-char (point-min))
-                (overlay-get  (car (overlays-at (point))) 'display)))
+                (overlay-get (car (overlays-at (point))) 'display)))
          (overlay (make-overlay begin end)))
     (overlay-put overlay 'display img)
     (overlay-put overlay 'org-overlay-type 'org-latex-overlay)
