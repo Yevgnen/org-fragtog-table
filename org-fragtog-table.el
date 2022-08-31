@@ -66,10 +66,9 @@
 (defun org-fragtog-table-preview-at-point ()
   (interactive)
   (if-let ((table (org-fragtog-table-table-at-point)))
-      (progn (org-fragtog-table-preview table)
-             t)
-    (error "No table found.")
-    nil))
+      (progn
+        (org-fragtog-table-preview table)
+        t)))
 
 ;;;###autoload
 (defun org-fragtog-table-org-tables-in-buffer ()
