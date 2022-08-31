@@ -106,6 +106,7 @@
 (define-minor-mode org-fragtog-table-mode
   "A minor mode that enables table preview by `org-fragtog' in Org mode."
   :init-value nil
+  :global t
   (if org-fragtog-table-mode
       (progn
         (advice-add 'org-fragtog--cursor-frag :after-until #'org-fragtog-table--org-fragtog--cursor-frag)

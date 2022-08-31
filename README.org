@@ -9,7 +9,9 @@ Add Org table preview support for [[https://github.com/io12/org-fragtog][org-fra
 #+begin_src elisp
 (use-package org-fragtog-table
   :straight (:host github :repo "Yevgnen/org-fragtog-table")
-  :hook (org-fragtog-mode . org-fragtog-table-mode))
+  :demand t
+  :after org-fragtog
+  :config (org-fragtog-table-mode))
 #+end_src
 
 * References
